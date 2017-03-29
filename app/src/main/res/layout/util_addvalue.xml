@@ -1,0 +1,178 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:background="@color/grey_cloud">
+
+        <TextView
+            android:id="@+id/tvBillValue"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="52sp"
+            android:gravity="center|right"
+            android:layout_margin="4dp"
+            android:text="00.00 €"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:weightSum="4">
+
+            <Button
+                android:id="@+id/bNum1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="1"
+                android:textSize="30sp"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/bNum4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="4"
+                android:textSize="30sp"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/bNum7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="30sp"
+                android:text="7"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/bNumPoint"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="30sp"
+                android:text="."
+                android:gravity="center"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:textSize="30sp"
+            android:weightSum="4">
+
+            <Button
+                android:id="@+id/bNum2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="30sp"
+                android:text="2"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/bNum5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="5"
+                android:textSize="30sp"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/bNum8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="8"
+                android:textSize="30sp"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/bNum0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="0"
+                android:textSize="30sp"
+                android:gravity="center"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:weightSum="4">
+
+            <Button
+                android:id="@+id/bNum3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="3"
+                android:textSize="30sp"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/bNum6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="6"
+                android:textSize="30sp"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/bNum9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="9"
+                android:textSize="30sp"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/bNumDel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="DEL"
+                android:textSize="30sp"
+                android:gravity="center"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
