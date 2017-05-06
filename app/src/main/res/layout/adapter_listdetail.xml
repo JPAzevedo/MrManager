@@ -1,11 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/history_list_height"
+    android:background="@color/amber_200_transp"
+    android:orientation="vertical">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@mipmap/ic_launcher"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blue_skyfaded">
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/history_list_height">
+
+            <ImageView
+                android:id="@+id/ivListDetailIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true" />
+
+            <RelativeLayout
+                android:id="@+id/rlHistoryDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toLeftOf="@+id/tvHistoryDetailValue"
+                android:layout_toRightOf="@+id/ivListDetailIcon">
+
+
+                <TextView
+                    android:id="@+id/tvHistoryDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/black_light"
+                    android:textSize="@dimen/hitorylist_detail_title"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvHistoryDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvHistoryDetail"
+                    android:layout_marginTop="2dp"
+                    android:textColor="@color/black_light"
+                    android:textSize="@dimen/hitorylist_detail_title" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvHistoryDetailValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/amber_400"
+                android:textSize="@dimen/hitorylist_detail_total"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
 </LinearLayout>

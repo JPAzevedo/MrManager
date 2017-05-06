@@ -1,0 +1,4 @@
+<resources>
+
+    <dimen name="dashboard_circle_size">128dp</dimen>
+</resources>

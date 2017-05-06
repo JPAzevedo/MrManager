@@ -1,11 +1,7 @@
 package pt.jpazevedo.mrmanager.adapters;
 
-import android.app.Activity;
-import android.content.Context;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 
 import pt.jpazevedo.mrmanager.R;
@@ -29,7 +25,7 @@ public class CalcAdapter{
     private Button buttonPoint;
     private Button buttonDel;
 
-    private Activity context;
+    private View context;
     private TextView tvValue;
 
     private static String int_value = "";
@@ -40,20 +36,21 @@ public class CalcAdapter{
 
     private static boolean intpart = true;
 
-    public CalcAdapter(Activity context){
+    public CalcAdapter(View context){
         this.context = context;
     }
 
-    public CalcAdapter(Activity context, TextView tvValue){
+    public CalcAdapter(View context, TextView tvValue){
         this.context = context;
         this.tvValue = tvValue;
     }
 
     public void initUI(){
         initButtons(context);
+        clearValue();
     }
 
-    private void initButtons(Activity context){
+    private void initButtons(View context){
 
             button0 = (Button) context.findViewById(R.id.bNum0);
             button1 = (Button) context.findViewById(R.id.bNum1);
@@ -81,7 +78,6 @@ public class CalcAdapter{
                 addChar("1");
             }
         });
-
 
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -154,54 +150,6 @@ public class CalcAdapter{
         });
     }
 
-
-
-    public void onClick(View view) {
-        Log.v("clicked","clicked c ");
-        switch (view.getId()){
-            case R.id.bNum0:
-                addChar("0");
-                break;
-            case R.id.bNum1:
-                addChar("1");
-                break;
-            case R.id.bNum2:
-                addChar("2");
-                break;
-            case R.id.bNum3:
-                addChar("3");
-                break;
-            case R.id.bNum4:
-                addChar("4");
-                break;
-            case R.id.bNum5:
-                addChar("5");
-                break;
-            case R.id.bNum6:
-                addChar("6");
-                break;
-            case R.id.bNum7:
-                addChar("7");
-                break;
-            case R.id.bNum8:
-                addChar("8");
-                break;
-            case R.id.bNum9:
-                addChar("9");
-                break;
-            case R.id.bNumDel:
-                clearValue();
-                break;
-            case R.id.bNumPoint:
-                CalcAdapter.intpart = false;
-                break;
-            default:
-                return;
-
-        }
-
-    }
-
     private void addChar(String s){
 
         if(intpart){
@@ -213,7 +161,7 @@ public class CalcAdapter{
         }
 
         if(tvValue != null){
-            tvValue.setText(CalcAdapter.int_value+CalcAdapter.point_value+CalcAdapter.decimal_value);
+            tvValue.setText(CalcAdapter.int_value+CalcAdapter.point_value+CalcAdapter.decimal_value + " €");
         }
     }
 
@@ -222,7 +170,7 @@ public class CalcAdapter{
             CalcAdapter.intpart = true;
             tvValue.setText("00.00 €");
             CalcAdapter.decimal_value = "00";
-            CalcAdapter.int_value = "00";
+            CalcAdapter.int_value = "";
         }
     }
 

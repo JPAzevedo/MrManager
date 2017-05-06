@@ -2,9 +2,39 @@
     <string name="app_name">Mr Manager</string>
 
 
-    <string name="tab_title_dashboard">Main</string>
+    <string name="tab_title_dashboard">Dashboard</string>
     <string name="tab_title_history">History</string>
     <string name="tab_title_friends">Friends</string>
     <string name="tab_title_profile">Profile</string>
     <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="ExpenseCategory_Lunch">Lunch</string>
+    <string name="ExpenseCategory_Diner">Dinner</string>
+    <string name="ExpenseCategory_Health">Health</string>
+    <string name="ExpenseCategory_Groceries">Groceries</string>
+    <string name="ExpenseCategory_Fitness">Fitness</string>
+    <string name="ExpenseCategory_Electronics">Electronics</string>
+    <string name="ExpenseCategory_Transports">Transports</string>
+    <string name="ExpenseCategory_Fuel">Fuel</string>
+    <string name="ExpenseCategory_HouseExpenses">House Expenses</string>
+    <string name="ExpenseCategory_HouseRent">House Rent</string>
+    <string name="ExpenseCategory_Vacancies">Vacancies</string>
+    <string name="ExpenseCategory_Travel">Travel</string>
+    <string name="ExpenseCategory_Clothes">Clothes</string>
+    <string name="ExpenseCategory_Other">Other</string>
+
+    <string name="Expense_Default_Value">00.00 €</string>
+    <string name="Expense_Default_DigitLeft">0 €</string>
+    <string name="Expense_Default_Currency"> €</string>
+
+    <string name="AddExpenseActivity_Title">Add Expense</string>
+    <string name="ExpenseDetailActivity_Title">Expense Detail</string>
+
+    <string name="MainActivity_AddedSuccessfully">New expense added with success.</string>
+    <string name="MainActivity_RemovedSuccessfully">Expense deleted with success.</string>
+    <string name="MainActivity_UpdatedSuccessfully">Expense updated with success.</string>
+    <string name="History_Text_NoRecords">No records were found.</string>
+
+    <string name="AddExpenseActivity_NameIsMissing">Fill the expense name.</string>
+
 </resources>

@@ -1,11 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="200dp">
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dashboard_box_height"
+    android:background="@color/grey_cloud"
+    android:orientation="horizontal"
+    android:weightSum="2">
 
-    <TextView
+    <RelativeLayout
+        android:id="@+id/rlDashboardItemColor"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Category"/>
+        android:layout_height="match_parent"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginTop="2dp"
+        android:layout_weight="1"
+        android:background="@color/amber_200_transp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/blue_skyfaded">
+
+
+            <RelativeLayout
+                android:id="@+id/rlDashData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+
+                <ImageView
+                    android:id="@+id/ivDashboardIconLeft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:id="@+id/tvDashboardTotalLeft"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ivDashboardIconLeft"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:text="Value"
+                    android:textSize="@dimen/dashboard_main_total" />
+
+
+                <TextView
+                    android:id="@+id/tvDashboardCategoryLeft"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvDashboardTotalLeft"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:text="Category"
+                    android:textColor="@color/blue_sky"
+                    android:textSize="@dimen/dashboard_main_title"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rlDashboardItemColorRight"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_weight="1"
+        android:background="@color/amber_200_transp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/blue_skyfaded">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/ivDashboardIconRight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:id="@+id/tvDashboardTotalRight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ivDashboardIconRight"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:text="Value"
+                    android:textSize="@dimen/dashboard_main_total" />
+
+
+                <TextView
+                    android:id="@+id/tvDashboardCategoryRight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvDashboardTotalRight"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:text="Category"
+                    android:textColor="@color/blue_sky"
+                    android:textSize="@dimen/dashboard_main_title"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
 
 </LinearLayout>

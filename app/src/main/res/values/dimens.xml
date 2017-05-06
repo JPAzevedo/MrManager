@@ -5,5 +5,25 @@
     <dimen name="fab_margin">16dp</dimen>
 
 
-    <dimen name="dash_dimen">200dp</dimen>
-</resources>
+    <dimen name="history_list_height">80dp</dimen>
+    <dimen name="history_list_detail">160dp</dimen>
+
+    <dimen name="hitorylist_title">20sp</dimen>
+    <dimen name="hitorylist_subtitle">18sp</dimen>
+    <dimen name="hitorylist_detail_title">16sp</dimen>
+    <dimen name="hitorylist_detail_total">20sp</dimen>
+
+    <dimen name="dashboard_main_title">20sp</dimen>
+    <dimen name="dashboard_main_total">23sp</dimen>
+
+    <dimen name="dashboard_box_height">162dp</dimen>
+    <dimen name="dashboard_circle_size">48dp</dimen>
+
+    <dimen name="expense_detail_titlesize">27sp</dimen>
+    <dimen name="expense_detail_textsize">23sp</dimen>
+    <dimen name="expense_detail_valuesize">26sp</dimen>
+    <dimen name="expense_detail_margin">10dp</dimen>
+    <dimen name="expense_detail_bigmargin">25dp</dimen>
+
+    <dimen name="splashscreen_title_size">30sp</dimen>
+«</resources>

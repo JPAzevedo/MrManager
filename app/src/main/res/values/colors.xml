@@ -7,6 +7,32 @@
 
     <color name="grey_cloud">#ecf0f1</color>
     <color name="green_dark">#388E3C</color>
+    <color name="green_dark_transp">#70388E3C</color>
     <color name="green_normal">#43A047</color>
-    <color name="green_light">#C8E6C9</color>
+    <color name="green_light">#F0C8E6C9</color>
+
+    <color name="grey_clouds">#ecf0f1</color>
+    <color name="grey_cloudy">#E0E0E0</color>
+    <color name="black_light">#212121</color>
+    <color name="red_light">#F44336</color>
+
+    <color name="yellow_200">#FFF59D</color>
+    <color name="yellow_400">#FFEE58</color>
+    <color name="amber_300">#FFD54F</color>
+    <color name="amber_200">#FFE082</color>
+    <color name="amber_600">#FFB300</color>
+    <color name="amber_400">#FFCA28</color>
+    <color name="amber_200_transp">#0AFFE082</color>
+    <color name="grey_700">#616161</color>
+    <color name="grey_500">#9E9E9E</color>
+
+    <color name="cream">#F5D76E</color>
+    <color name="brown_light">#E2B13C</color>
+
+    <color name="white">#FFF</color>
+
+    <color name="blue_sky">#375E97</color>
+    <color name="blue_sky_faded">#D0375E97</color>
+    <color name="blue_skyfaded">#0F375E97</color>
+    <color name="red_sunset">#FB6542</color>
 </resources>

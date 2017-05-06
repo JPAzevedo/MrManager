@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_cloud">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/aplExpenseDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tbExpenseDetail"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:titleTextColor="@color/grey_cloud"
+            app:theme="@style/ToolbarTheme"
+            app:titleTextColor="@color/grey_cloud" />
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        android:id="@+id/tvExpenseDetailCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aplExpenseDetail"
+        android:layout_marginTop="@dimen/expense_detail_margin"
+        android:gravity="center"
+        android:textSize="@dimen/expense_detail_titlesize"
+        android:textStyle="bold" />
+
+
+    <ImageView
+        android:id="@+id/ivIconExpenseDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvExpenseDetailCategory"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/expense_detail_bigmargin" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/expense_detail_bigmargin"
+            android:layout_marginRight="@dimen/expense_detail_bigmargin"
+            android:layout_marginTop="100dp"
+            android:background="@color/amber_200_transp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blue_skyfaded"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvExpenseDetailName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/expense_detail_margin"
+                    android:gravity="center"
+                    android:textSize="@dimen/expense_detail_textsize"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvExpenseDetailDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/expense_detail_margin"
+                    android:gravity="center"
+                    android:textSize="@dimen/expense_detail_textsize" />
+
+                <TextView
+                    android:id="@+id/tvExpenseDetailDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/expense_detail_margin"
+                    android:gravity="center"
+                    android:textSize="@dimen/expense_detail_textsize" />
+
+                <TextView
+                    android:id="@+id/tvExpenseDetailValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/expense_detail_margin"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/expense_detail_margin"
+                    android:textSize="@dimen/expense_detail_valuesize" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

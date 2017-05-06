@@ -1,23 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/tvMainAdapter"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:background="#DD00AA"
-    />
+        android:layout_height="@dimen/history_list_height"
+        android:background="@color/amber_200_transp">
+
+        <RelativeLayout
+            android:id="@+id/rlHeaderMonthHistory"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/history_list_height"
+            android:background="@color/blue_skyfaded">
+
+            <ImageView
+                android:id="@+id/ivTotalHistory"
+                android:layout_width="@dimen/history_list_height"
+                android:layout_height="@dimen/history_list_height"
+                android:layout_margin="4dp"
+                android:src="@drawable/circle" />
+
+            <TextView
+                android:id="@+id/tvTotalBillsNumber"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@+id/ivTotalHistory"
+                android:layout_alignLeft="@+id/ivTotalHistory"
+                android:layout_alignRight="@+id/ivTotalHistory"
+                android:gravity="center"
+                android:textColor="@color/blue_sky"
+                android:textSize="@dimen/hitorylist_title"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/ivTotalHistory">
+
+                <TextView
+                    android:id="@+id/tvHistoryMonth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="4dp"
+                    android:textColor="@color/blue_sky"
+                    android:textSize="@dimen/hitorylist_title"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvTotalValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvHistoryMonth"
+                    android:paddingLeft="4dp"
+                    android:text="00.00 €"
+
+                    android:textSize="@dimen/hitorylist_subtitle" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
 
     <LinearLayout
         android:id="@+id/llWrapper"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:visibility="gone"
-        >
+        android:visibility="gone">
 
     </LinearLayout>
+
 
 </LinearLayout>

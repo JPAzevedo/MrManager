@@ -5,10 +5,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.util.List;
 
 import pt.jpazevedo.mrmanager.R;
+import pt.jpazevedo.mrmanager.util.ExpensesManagement;
 
 /**
  * Created by joaopedroazevedo11 on 05/03/17.
@@ -20,12 +23,9 @@ public class AddCategoryAdapter extends BaseAdapter {
 
     private List<String> category;
 
-    private List<Integer> resources;
-
-    public AddCategoryAdapter(Context context, List<String> category, List<Integer> resources){
+    public AddCategoryAdapter(Context context, List<String> category){
         this.context = context;
         this.category = category;
-        this.resources = resources;
     }
 
     @Override
@@ -40,12 +40,19 @@ public class AddCategoryAdapter extends BaseAdapter {
 
     @Override
     public long getItemId(int i) {
-        return 0;
+        return i;
     }
 
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
         view = LayoutInflater.from(context).inflate(R.layout.adapter_addcategory,viewGroup,false);
+        TextView title = (TextView) view.findViewById(R.id.tvAddCategoryTitle);
+        ImageView icon = (ImageView) view.findViewById(R.id.ivAddCategory);
+        ExpensesManagement expensesManagement = new ExpensesManagement();
+        title.setText(category.get(i));
+        icon.setImageResource(expensesManagement.getExpenseSmallDrawable(i+1));
         return view;
     }
+
+
 }

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/grey_cloud"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/svAddBill"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/llAddBillScrollChild"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/bill">
+            </ImageView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="16dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/edBillName"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp"
+                    android:maxLength="35"
+                    android:hint="Name"/>
+
+                <EditText
+                    android:id="@+id/edBillDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:lines="4"
+                    android:gravity="top"
+                    android:hint="Description"/>
+
+
+                <EditText
+                    android:id="@+id/etDate"
+                    android:layout_width="match_parent"
+                    android:textSize="16sp"
+                    android:inputType="none"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:layout_height="40dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvValue"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:textSize="18sp"
+                        android:gravity="center_vertical"
+                        android:text="+ Value" />
+
+                    <include layout="@layout/util_addvalue"
+                        android:id="@+id/lValue"
+                        android:visibility="gone"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvCategory"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:textSize="18sp"
+                        android:gravity="center_vertical"
+                        android:text="+ Category" />
+
+                    <LinearLayout
+                        android:id="@+id/lCategory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+                        <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/gvAddBill"
+                            android:layout_width="match_parent"
+                            android:layout_height="400dp"
+                            android:numColumns="3"/>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</LinearLayout>
